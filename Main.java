@@ -7,10 +7,20 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
+
+//    double userLatitude = 33.9592;
+//     double userLongitude = 83.3763;
+//     WeatherAPIUtil weatherAPI = new WeatherAPIUtil();
+//     String apiURL;
+    
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws ParseException {
         boolean userStatus = true;
+        // Main mainInstance = new Main();
+        // mainInstance.apiURL = mainInstance.weatherAPI.getWeatherInfo(mainInstance.userLatitude, mainInstance.userLongitude);
+        // System.out.println(mainInstance.apiURL);
+       
 
         while (userStatus) {
 
@@ -108,12 +118,16 @@ public class Main {
     }
 
     public static void details(RecipeManager recipeManager) {
-        System.out.print("Do you want to see your saved recipes?");
+        System.out.print("Do you want to see your saved recipes? ");
         String seeSaved = scanner.next();
         if (seeSaved.equalsIgnoreCase("yes")) {
+            System.out.println();
             recipeManager.getSavedRecipe();
+            System.out.println();
         }
 
     }
 
 }
+
+
