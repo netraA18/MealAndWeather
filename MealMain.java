@@ -88,7 +88,7 @@ public class MealMain {
 
         System.out.println("\nMeal Name:\t\t " + mealName + "\n");
         System.out.println("Category:\t\t " + mealCategory + "\n");
-        System.out.println("Youtube:\t\t " + youTube + "\n");
+        System.out.println("Youtube Video:\t\t " + youTube + "\n");
         System.out.println("Instructions:" + "\n");
 
         for (int j = 1; j < sentences.length; j++) {
