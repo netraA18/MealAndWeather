@@ -7,6 +7,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 public class WeatherMain {
+    static double convertedTemp;
 
     WeatherAPIUtil weatherAPI = new WeatherAPIUtil();
     String apiURL;
@@ -82,7 +83,7 @@ public class WeatherMain {
         double currentTemp = (double) city.get("temp");
         long humidity = (long) city.get("humidity");
 
-        double convertedTemp = convertTemp(currentTemp);
+        convertedTemp = convertTemp(currentTemp);
         System.out.printf("Temperature: %.2f°F\n", convertedTemp);
         System.out.println("Humidity: " + humidity + "%\n");
         
