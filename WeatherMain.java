@@ -14,7 +14,7 @@ public class WeatherMain {
 
     public static void main(String[] args) throws ParseException, IOException {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("\nEnter the city name: ");
+        System.out.print("\nEnter the city name : ");
 
         String cityName = scanner.next();
         System.out.print("Enter the country abbreviation: ");
